@@ -136,7 +136,7 @@ DocumentRoot /var/www/html/$name
    </HEAD>
 <BODY>
    <H1>Hi</H1>
-   <P>This is very minimal "hello world" HTML document.</P> 
+   <P>This is my virtual host managed by puppet with the name $name.</P> 
 </BODY>
 </HTML>',
     owner   => 'apache',
