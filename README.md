@@ -44,10 +44,10 @@ sudo service httpd status
 Probeer de service handmatig te stoppen en dan weer puppet te runnen en de status opnieuw te bekijken.<br />
 We merken nu al dat het handig is om de twee manifest te combineren (zoals we dat wel vaker doen in programmeertalen) in subclassen en deze dan aanroepen vanaf een hoofdclasse. Dit is het begin van onze puppet-module. De filestructuur van een puppetmodule is als voglt:
 modulename<br />
-..manifests<br />
-....init.pp<br />
-....subclass1.pp<br />
-....subclass2.pp<br />
+⋅⋅manifests<br />
+⋅⋅⋅⋅init.pp<br />
+⋅⋅⋅⋅subclass1.pp<br />
+⋅⋅⋅⋅subclass2.pp<br />
 
 De hoofdclasse waar puppet default naar kijkt heeft normaal gesproken de naam van de module zelf en is als default in de init.pp file te vinden.<br />
 Maak voor onze demo een apache/manifests/init.pp file aan met de volgende inhoud:
